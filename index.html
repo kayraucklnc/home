@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>mycodventure</title>
+<link rel="icon" href="src/pic.jpg" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -97,7 +98,8 @@
     .bgimg-1,
     .bgimg-2,
     .bgimg-3,
-    .bgimg-4 {
+    .bgimg-4,
+    .bgimg-5 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -126,6 +128,12 @@
     .bgimg-4 {
         background-image: url("src/koala.jpg");
         min-height: 400px;
+    }
+
+    /* Fifth image (Personal Skills) */
+    .bgimg-5 {
+        background-image: url("src/lion.jpg");
+        min-height: 550px;
     }
 
     .w3-wide {
@@ -181,8 +189,9 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container" style="opacity: 0.80;" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"><span
-                    class="w3-hide-small">MYCODVENTURE</span></span>
+            <span class="w3-center w3-black w3-xxxlarge w3-wide w3-animate-opacity"
+                style="padding: 30px; padding-top: 50px;"><span class="w3-hide-small"
+                    style="font-size: 50pt;">MYCODVENTURE</span></span>
         </div>
     </div>
 
@@ -219,11 +228,11 @@
             Personal Projects
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">400</span><br>
+            <span class="w3-xlarge">400+</span><br>
             Instagram Followers
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">50+</span><br>
+            <span class="w3-xlarge">30+</span><br>
             Clients
         </div>
         <div class="w3-quarter w3-section">
@@ -232,10 +241,10 @@
         </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <!-- Second Parallax-->
+    <div class="bgimg-2 w3-display-container" style="opacity: 0.80;">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            <span class="w3-xxxlarge w3-text-white w3-wide">PORTFOLIO</span>
         </div>
     </div>
 
@@ -348,10 +357,10 @@
         </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <!-- Third Parallax -->
+    <div class="bgimg-5 w3-display-container" style="opacity: 0.80;">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PERSONAL SKILLS</span>
+            <span class="w3-xxxlarge w3-text-white w3-wide">PERSONAL SKILLS</span>
         </div>
     </div>
 
@@ -423,8 +432,8 @@
         </div>
     </div>
 
-    <!-- Fourth Parallax Image with Portfolio Text -->
-    <div class="bgimg-4 w3-display-container w3-opacity-min" style="background-position-y: 120px;">
+    <!-- Fourth Parallax -->
+    <div class="bgimg-4 w3-display-container" style="background-position-y: 120px;">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">CUTE KOALA</span>
         </div>

@@ -41,6 +41,11 @@
 
 
 <style>
+    .skill-tree {
+        margin-bottom: 50px;
+    }
+
+
     .flex-container {
         display: flex;
     }
@@ -52,11 +57,9 @@
 
 
     .bar-extra {
-        padding: 10px 50px;
         float: left;
         height: 60px;
-        width: 1600px;
-        left: 10%;
+        width: 100%;
         border: none;
         display: block;
         outline: 0
@@ -69,7 +72,7 @@
 
     .showcase-full {
         width: 800px;
-        height: 800px
+        height: 200%;
     }
 
     body,
@@ -148,12 +151,13 @@
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar bar-extra" id="myNavbar">
-            <a class=" w3-button w3-dark-grey w3-hide-medium w3-hide-large w3-cell-middle" href="javascript:void(0);"
-                onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <div style="font-size: 18pt;" class="w3-bar bar-extra" id="myNavbar">
+            <a class="  w3-hide-large" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button">HOME SWEET</a>
+            <a href="#home" class="w3-bar-item w3-button w3-hover-khaki">HOME
+                SWEET</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -174,55 +178,35 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
-                    class="w3-hide-small">WEBSITE</span> LOGO</span>
+            <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"><span
+                    class="w3-hide-small">MYCODVENTURE</span></span>
         </div>
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love photography</em></p>
-        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3 class="w3-center">ABOUT</h3>
+        <p class="w3-center"><em>Oddities within the familiar</em></p>
+        <p>This webpage is dedicated itself to showcase math, physics, coding and always creativity. Instagram page is
+            where stuff actually happens first then this page comes. Most of my work is attached with explanation but in
+            case you ever feel left out just let me know about it. Contact with me through Instagram!
+            Feel at home, wonder around and amaze by the
+            beauty of the nature. <br><br>
+        </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
-                <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-                <img src="/content/bezos.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me"
-                    width="500" height="333">
+                <img src="src/pic.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="500"
+                    height="333">
             </div>
 
             <!-- Hide this text on small devices -->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>This picture is actually where my code and life connects. It's a mess, some even call it spaghetti
+                    but I like it<br><br>
+                    I started creative content creation at early 2018 and started to share them online at late 2019.
+                    I keep doing new stuff only because I enjoy doing them nothing else! Hope you like what I enjoy
+                    otherwise you wouldn't be here.</p>
             </div>
-        </div>
-        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-        <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
         </div>
     </div>
 
@@ -261,8 +245,8 @@
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
-                <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist over the mountains">
+                <img src="src/koala.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Coffee beans">
             </div>
 
             <div class="w3-col m3">
@@ -323,6 +307,7 @@
         <div style="margin-left: 5%;"
             class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 flex-container">
             <img id="img01" class="w3-image showcase-full">
+
             <div>
                 <p id="caption" style="color: white; background-color: black; width: 700px; margin-left: 60px;"
                     class="w3-xxlarge">
@@ -338,42 +323,74 @@
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PERSONAL SKILLS</span>
+        </div>
+    </div>
+
+    <!-- What I am good at -->
+    <div class="w3-content w3-container" style="padding-top: 150px; padding-bottom: 150px;" id="goodat">
+
+        <p class="w3-wide"><i class="fa fa-keyboard-o"></i>Javascript</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:30%"></div>
+        </div>
+
+        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:40%"></div>
+        </div>
+
+        <p class="w3-wide"><i class="fa fa-keyboard-o"></i>Python</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:50%"></div>
+        </div>
+
+        <p class="w3-wide"><i class="fa fa-keyboard-o"></i>Java</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:60%"></div>
+        </div>
+
+        <p class="w3-wide"><i class="fa fa-picture-o"></i>Photoshop</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:65%"></div>
+        </div>
+
+        <p class="w3-wide"><i class="fa fa-picture-o"></i>After Effects</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center skill-tree" style="width:70%"></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Fourth Parallax -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
         </div>
     </div>
 
+
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">WHERE I WORK</h3>
-        <p class="w3-center"><em>I'd love your feedback!</em></p>
+        <h3 class="w3-center">THATS ME</h3>
+        <p class="w3-center"><em>Also here is a cute animal to look at</em></p>
 
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-                <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+                <img src="src/seal.jpg" class="w3-image" style="width:100%">
             </div>
             <div class="w3-col m8 w3-panel">
                 <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-                    151515<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                    mail@mail.com<br>
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xxlarge w3-margin-right"></i> Europe<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xxlarge w3-margin-right"></i>Instagram DM<br>
                 </div>
-                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                </form>
+
+                <a href="https://www.patreon.com/mycodventure" style="text-decoration: none; color: cornflowerblue;"
+                    class="w3-xlarge"> Buy a
+                    cup of <i class="fa fa-coffee w3-xxlarge"></i>me </a>
+
             </div>
         </div>
     </div>
@@ -384,6 +401,7 @@
             <span class="w3-xxlarge w3-text-white w3-wide">CUTE KOALA</span>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity-min w3-hover-opacity-off">
@@ -402,8 +420,10 @@
             document.getElementById("modal01").style.display = "block";
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
+
             var detailText = document.getElementById("details");
             var projectPage = document.getElementById("p_page");
+
             detailText.innerHTML = element.getAttribute("data-myproperty");
             projectPage.href = element.getAttribute("data-url");
         }

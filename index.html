@@ -66,13 +66,14 @@
     }
 
     .showcase {
-        width: 300px;
-        height: 300px
+        max-height: 420px;
+        max-width: 420px;
     }
 
     .showcase-full {
         width: 800px;
-        height: 200%;
+        max-height: 800px;
+        max-width: 800px;
     }
 
     body,
@@ -147,7 +148,9 @@
     }
 </style>
 
+
 <body>
+
 
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -176,7 +179,7 @@
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="bgimg-1 w3-display-container" style="opacity: 0.80;" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
             <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity"><span
                     class="w3-hide-small">MYCODVENTURE</span></span>
@@ -212,20 +215,20 @@
 
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">14+</span><br>
-            Partners
+            <span class="w3-xlarge">11+</span><br>
+            Personal Projects
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">55+</span><br>
-            Projects Done
+            <span class="w3-xlarge">400</span><br>
+            Instagram Followers
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">89+</span><br>
-            Happy Clients
+            <span class="w3-xlarge">50+</span><br>
+            Clients
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">150+</span><br>
-            Meetings
+            <span class="w3-xlarge">5+</span><br>
+            Year experience
         </div>
     </div>
 
@@ -236,6 +239,8 @@
         </div>
     </div>
 
+
+
     <!-- Container (Portfolio Section) -->
     <div class=" w3-container w3-padding-64" id="portfolio">
         <h3 class="w3-center">MY WORK</h3>
@@ -244,18 +249,10 @@
 
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="src/koala.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
-            </div>
+
 
             <div class="w3-col m3">
-                <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="src/arc.jpg" onclick="onClick(this)" class=" showcase"
+                <img src="src/arc.jpg" onclick="onClick(this)" class="w3-hover-opacity showcase"
                     data-url="https://www.instagram.com/p/B_KrG94nTRn/"
                     data-myproperty="Say hello Spotify!
                     Starting from my taste of music I collected what people listen if they listen that band
@@ -269,33 +266,65 @@
             </div>
 
             <div class="w3-col m3">
-                <img src="src/pan.gif" onclick="onClick(this)" class="w3-hover-opacity showcase" data-url="#home"
+                <img src="src/particles.png" onclick="onClick(this)" class="w3-hover-opacity showcase" data-url="#home"
                     data-myproperty="S" alt=" Pan">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/src/gravity.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity showcase"
+                    alt="Gravity">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/src/piday.png" onclick="onClick(this)" class="w3-hover-opacity showcase" alt="Piday">
+            </div>
+
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+
+
+            <div class="w3-col m3">
+                <img src="/src/raycast.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity showcase"
+                    alt="Raycasting">
+            </div>
+            <div class="w3-col m3">
+                <img src="/src/retro.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity showcase"
+                    alt="Waporvave">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/src/cloth.png" onclick="onClick(this)" class="w3-hover-opacity showcase"
+                    alt="Cloth Simulation">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/src/lissajous.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity showcase" alt="Lissajous table">
             </div>
         </div>
 
         <div class="w3-row-padding w3-center w3-section">
+
             <div class="w3-col m3">
-                <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist">
+                <img src="/src/latelast.png" onclick="onClick(this)" class="w3-hover-opacity showcase"
+                    alt="HIMYM Analysis">
+            </div>
+
+
+            <div class="w3-col m3">
+                <img src="src/rabduck.png" class="w3-hover-opacity showcase" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="Rabbit or Duck">
             </div>
 
             <div class="w3-col m3">
-                <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="My beloved typewriter">
+                <img src="/src/labr.png" onclick="onClick(this)" class="w3-hover-opacity showcase" alt="The Labyrenth">
             </div>
 
-            <div class="w3-col m3">
-                <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Empty ghost train">
-            </div>
 
-            <div class="w3-col m3">
-                <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Sailing">
-            </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+
         </div>
+
     </div>
 
     <!-- Modal for full size images on click-->
@@ -304,13 +333,12 @@
         <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
                 class="fa fa-remove"></i></span>
 
-        <div style="margin-left: 5%;"
-            class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 flex-container">
+        <div style="margin-left: 5%;" class=" w3-animate-zoom w3-center w3-transparent w3-padding-64 flex-container">
             <img id="img01" class="w3-image showcase-full">
 
+
             <div>
-                <p id="caption" style="color: white; background-color: black; width: 700px; margin-left: 60px;"
-                    class="w3-xxlarge">
+                <p id="caption" style="color: white; background-color: black; margin-left: 60px;" class="w3-xxlarge">
                 </p>
                 <p id="details"
                     style="color: white; background-color: black; width: 800px; text-align: left; font: line-height: 60px; font-size: 16pt; word-wrap: break-word "
@@ -396,7 +424,7 @@
     </div>
 
     <!-- Fourth Parallax Image with Portfolio Text -->
-    <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="bgimg-4 w3-display-container w3-opacity-min" style="background-position-y: 120px;">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">CUTE KOALA</span>
         </div>

@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
+<!-- Auto scroll code -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -26,7 +28,7 @@
                 // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 1200, function () {
+                }, 550, function () {
 
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
@@ -90,7 +92,8 @@
     /* Create a Parallax Effect */
     .bgimg-1,
     .bgimg-2,
-    .bgimg-3 {
+    .bgimg-3,
+    .bgimg-4 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -112,6 +115,12 @@
     /* Third image (Contact) */
     .bgimg-3 {
         background-image: url("/content/puppy.jpg");
+        min-height: 400px;
+    }
+
+    /* Fourth image (Contact) */
+    .bgimg-4 {
+        background-image: url("/content/koala.jpg");
         min-height: 400px;
     }
 
@@ -262,18 +271,22 @@
             </div>
 
             <div class="w3-col m3">
-                <img src="/content/arc.jpg" onclick="onClick(this)" class="w3-hover-opacity showcase" alt="Kayra I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                <img src="/content/arc.jpg" onclick="onClick(this)" class=" showcase"
+                    data-url="https://www.instagram.com/p/B_KrG94nTRn/"
+                    data-myproperty="Say hello Spotify!
+                    Starting from my taste of music I collected what people listen if they listen that band
+                    Larger the font the more followers they have <br />
+                    <br />* Colors are randomly selected for each cumulative base.
+                    <br />* Source data is collected with Spotify API used tools are Python Photoshop and Java
+                    <br />* I used Fruchterman Reingold method to place nodes
+                    <br />* Closer artists have more common fan-base vice versa
+                    <br />* I've started data collection from a specific artist and then proceed to go deeper branching the search. Thats why we dont really see a separation with genres
+                    <br />* For those who ask where is X? X is not the most listened artist from its closest artist, thats why X is not here." alt="Arctic Monkeys">
             </div>
 
             <div class="w3-col m3">
-                <img src="/content/pan.gif" onclick="onClick(this)" class="w3-hover-opacity showcase" alt="Pan">
+                <img src="/content/pan.gif" onclick="onClick(this)" class="w3-hover-opacity showcase" data-url="#home"
+                    data-myproperty="S" alt=" Pan">
             </div>
         </div>
 
@@ -307,12 +320,17 @@
         <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
                 class="fa fa-remove"></i></span>
 
-        <div style="margin-left: 12%;"
+        <div style="margin-left: 5%;"
             class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64 flex-container">
             <img id="img01" class="w3-image showcase-full">
             <div>
-                <p id="caption" style="color: white; background-color: black; width: 500%; line-height: 250%;"
-                    class="w3-xlarge"></p>
+                <p id="caption" style="color: white; background-color: black; width: 700px; margin-left: 60px;"
+                    class="w3-xxlarge">
+                </p>
+                <p id="details"
+                    style="color: white; background-color: black; width: 800px; text-align: left; font: line-height: 60px; font-size: 16pt; word-wrap: break-word "
+                    class=""></p>
+                <a id="p_page" href="#home">Project page</a>
             </div>
         </div>
     </div>
@@ -360,19 +378,21 @@
         </div>
     </div>
 
+    <!-- Fourth Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CUTE KOALA</span>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity-min w3-hover-opacity-off">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
         <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <a href="#home" style="text-decoration: none" class="fa fa-instagram w3-hover-opacity"> Instagram</a>
+
         </div>
-        <p>Contact at <a href="https://www.instagram.com/mycodventure" title="Kayra Uckilinc" target="_blank"
-                class="w3-hover-text-green">@mycodventure</a></p>
     </footer>
 
     <script>
@@ -382,6 +402,10 @@
             document.getElementById("modal01").style.display = "block";
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
+            var detailText = document.getElementById("details");
+            var projectPage = document.getElementById("p_page");
+            detailText.innerHTML = element.getAttribute("data-myproperty");
+            projectPage.href = element.getAttribute("data-url");
         }
 
         // Change style of navbar on scroll
